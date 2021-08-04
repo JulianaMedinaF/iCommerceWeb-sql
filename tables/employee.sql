@@ -4,7 +4,6 @@
 
 CREATE TABLE IF NOT EXISTS public.employee (
 	id bigint PRIMARY KEY,
-	id_service bigint NOT NULL,
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
 	address VARCHAR(100) NOT NULL,
@@ -13,3 +12,12 @@ CREATE TABLE IF NOT EXISTS public.employee (
 	type_employee VARCHAR(50) NOT NULL,
 	date_birth DATE NOT NULL
 );
+
+
+/***ALTER TABLE FOR ADD SEQUENCE TO THE ID
+	
+	/*
+	ALTER TABLE employee 
+    ALTER COLUMN id SET DEFAULT nextval('employee_sequence');
+	ALTER SEQUENCE employee_sequence OWNED BY employee.id;
+	*/

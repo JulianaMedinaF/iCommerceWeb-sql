@@ -24,11 +24,3 @@ TABLESPACE pg_default;
 
 ALTER TABLE public.product
     OWNER to postgres;
-
-/***ALTER TABLE FOR ADD SEQUENCE TO THE ID
-	
-	/*
-	ALTER TABLE employee 
-    ALTER COLUMN id SET DEFAULT nextval('employee_sequence');
-	ALTER SEQUENCE employee_sequence OWNED BY employee.id;
-	*/
