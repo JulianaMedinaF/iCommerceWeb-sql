@@ -3,7 +3,7 @@
 -- DROP TABLE public.employee;
 
 CREATE TABLE IF NOT EXISTS public.employee (
-	id bigint NOT NULL,
+	id bigint PRIMARY KEY,
 	id_service bigint NOT NULL,
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
